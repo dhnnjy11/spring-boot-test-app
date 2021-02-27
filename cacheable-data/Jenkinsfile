@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                sh "mvn --version"
-                sh 'mvn cacheable-data clean install'
+                sh 'mvn -f cacheable-data clean install'
             }
         }
     }
